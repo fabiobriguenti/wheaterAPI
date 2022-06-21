@@ -1,0 +1,12 @@
+server:
+  error:
+    include-message: always
+
+api:
+  meta:
+    woeid:
+      timeout: 1500
+      endpoint: https://3388a669-03f0-42e6-8870-8f6305003c42.mock.pstmn.io/api/location/search/?query={cityName}
+    weather:
+      timeout: 10
+      endpoint: https://3388a669-03f0-42e6-8870-8f6305003c42.mock.pstmn.io/api/location/{woeid}/
